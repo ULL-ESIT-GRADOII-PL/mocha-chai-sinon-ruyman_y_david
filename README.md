@@ -1,10 +1,10 @@
-# Eliminación del Switch Smell.
+# Mocha, Chai y Sinon.
 ## ETSII ULL Grado de Informatica
 ## Asignatura: [Procesadores de Lenguajes](https://campusvirtual.ull.es/1516/course/view.php?id=178)
 
 ### Despliegue en github.io
 
-* [Página de la práctica](http://ULL-ESIT-GRADOII-PL.github.io/eliminacion-del-switch-ruyman_y_david/)
+* [Página de la práctica](http://ULL-ESIT-GRADOII-PL.github.io/mocha-chai-sinon-ruyman_y_david/)
 
 ### Desarrolladores
 
