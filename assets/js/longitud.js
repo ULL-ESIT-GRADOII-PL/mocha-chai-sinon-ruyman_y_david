@@ -8,7 +8,7 @@
   }
 
   Longitud.prototype = new Medida();
-  Longitud.prototype.constructor = Temperatura;
+  Longitud.prototype.constructor = Longitud;
 
   // Clase Metros
   function Metros(valor)
