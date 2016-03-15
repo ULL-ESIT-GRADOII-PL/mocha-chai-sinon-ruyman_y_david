@@ -15,7 +15,7 @@
   {
     Longitud.call(this, valor, 'M');
     this.toPulgadas = function() {
-      return new Pulgadas (valor/0.0254);
+      return(new Pulgadas (this.valor/0.0254));
     }
   }
 
