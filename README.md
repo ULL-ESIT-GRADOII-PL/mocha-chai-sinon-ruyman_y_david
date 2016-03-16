@@ -4,7 +4,7 @@
 
 ### Despliegue en github.io
 
-* [Página de la práctica](http://ULL-ESIT-GRADOII-PL.github.io/mocha-chai-sinon-ruyman_y_david/)
+* [Página de la práctica](http://ULL-ESIT-GRADOII-PL.github.io/mocha-chai-sinon-ruyman_y_david/test.html)
 
 ### Desarrolladores
 
