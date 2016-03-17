@@ -13,8 +13,7 @@ describe("Medida", function() {
       expect(m).to.not.be.undefined;
     });
     it("No debería crearse si no le pasamos parámetros", function() {
-      var m = new Medida ();
-      expect(m).to.be.undefined;
+      expect(new Medida ()).to.equal.undefined;
     });
   });
   describe("#convertir", function() {
@@ -28,10 +27,10 @@ describe("Medida", function() {
         expect(Medida.convertir ("100 C to JJJJJ")).to.equal('Desconozco como convertir desde "Celsius" hasta "JJJJJ"');
     });
     it("Debería devolver un string con la conversión realizada", function() {
-        expect(Medida.convertir ("100 C to K")).to.equal("373.15 Kelvin");
+        expect(Medida.convertir ("100 C to K")).to.be.an.instanceof(Kelvin);
     });
     it("Debería devolver un string con la conversión realizada", function() {
-        expect(Medida.convertir ("100 F K")).to.equal("310.93 Kelvin");
+        expect(Medida.convertir ("100 F K")).to.be.an.instanceof(Kelvin);
     });
   });
 });
@@ -48,7 +47,7 @@ describe("Longitud", function() {
     describe("Constructor", function() {
       it("Debería tener un tipo M y un valor", function() {
         var m = new Metros(5);
-        expect(m.toString).to.equal(5);
+        expect(m.valor).to.equal(5);
         expect(m.tipo).to.equal("M");
       });
     });
@@ -67,7 +66,7 @@ describe("Longitud", function() {
       });
       it("Debería devolver un string '5 Metros' ", function() {
         var m = new Metros (5);
-        expect(m.toString ()).to.equal("5 Metros");
+        expect(m.toString ()).to.equal("5.00 Metros");
       });
     });
   });
@@ -95,7 +94,7 @@ describe("Longitud", function() {
       });
       it("Debería devolver un string '5 Pulgadas' ", function() {
         var p = new Pulgadas (5);
-        expect(p.toString ()).to.equal("5 Pulgadas");
+        expect(p.toString ()).to.equal("5.00 Pulgadas");
       });
     });
   });
@@ -140,7 +139,7 @@ describe("Temperatura", function() {
       });
       it("Debería devolver un string '5 Celsius' ", function() {
         var c = new Celsius (5);
-        expect(c.toString ()).to.equal("5 Celsius");
+        expect(c.toString ()).to.equal("5.00 Celsius");
       });
     });
   });
@@ -175,7 +174,7 @@ describe("Temperatura", function() {
       });
       it("Debería devolver un string '5 Fahrenheit' ", function() {
         var f = new Fahrenheit (5);
-        expect(f.toString ()).to.equal("5 Fahrenheit");
+        expect(f.toString ()).to.equal("5.00 Fahrenheit");
       });
     });
   });
@@ -210,7 +209,7 @@ describe("Temperatura", function() {
       });
       it("Debería devolver un string '5 Kelvin' ", function() {
         var k = new Kelvin (5);
-        expect(k.toString ()).to.equal("5 Kelvin");
+        expect(k.toString ()).to.equal("5.00 Kelvin");
       });
     });
   });
