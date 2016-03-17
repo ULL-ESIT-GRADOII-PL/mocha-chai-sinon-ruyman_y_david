@@ -26,11 +26,20 @@ describe("Medida", function() {
     it("Debería devolver un string 'Error...' no se encuentra destino", function() {
         expect(Medida.convertir ("100 C to JJJJJ")).to.equal('Desconozco como convertir desde "Celsius" hasta "JJJJJ"');
     });
-    it("Debería devolver un string con la conversión realizada", function() {
+    it("Debería devolver un objeto Medida con el valor de cambio", function() {
         expect(Medida.convertir ("100 C to K")).to.be.an.instanceof(Kelvin);
     });
-    it("Debería devolver un string con la conversión realizada", function() {
+    it("Debería devolver un objeto Medida con el valor de cambio", function() {
         expect(Medida.convertir ("100 F K")).to.be.an.instanceof(Kelvin);
+    });
+    it("Debería devolver un objeto Medida con el valor de cambio (exponente)", function() {
+        expect(Medida.convertir ("100^2 F K")).to.be.an.instanceof(Kelvin);
+    });
+    it("Debería devolver un objeto Medida con el valor de cambio", function() {
+        expect(Medida.convertir ("100 F K")).to.be.an.instanceof(Kelvin);
+    });
+    it("Debería devolver un objeto Medida del mismo tipo", function() {
+        expect(Medida.convertir ("100M")).to.be.an.instanceof(Metros);
     });
   });
 });
