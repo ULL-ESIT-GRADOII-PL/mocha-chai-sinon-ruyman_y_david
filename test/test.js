@@ -25,7 +25,7 @@ describe("Medida", function() {
         expect(Medida.convertir (null)).to.equal("Introduzca una temperatura valida: 330e-1 Fahrenheit to Celsius");
     });
     it("Debería devolver un string 'Error...' no se encuentra destino", function() {
-        expect(Medida.convertir ("100 C to JJJJJ")).to.equal('Desconozco como convertir desde "Celsius" hasta "JJJJJ"';);
+        expect(Medida.convertir ("100 C to JJJJJ")).to.equal('Desconozco como convertir desde "Celsius" hasta "JJJJJ"');
     });
     it("Debería devolver un string con la conversión realizada", function() {
         expect(Medida.convertir ("100 C to K")).to.equal("373.15 Kelvin");
