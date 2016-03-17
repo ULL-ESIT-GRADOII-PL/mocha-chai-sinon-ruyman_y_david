@@ -12,7 +12,7 @@
   }
 
   Medida.REGEXP = XRegExp('^\\s*(?<numero> [-+]?\\d+(?:.\\d*)?)   # NUMERO      \n' +
-                          '\\s*(?:e(?<exponente> [-+]?\\d+))?     # EXPONENTE   \n' +
+                          '\\s*e(?<exponente> [-+]?\\d+)          # EXPONENTE   \n' +
                           '\\s*(?<tipo> ([A-Z]+))                 # TIPO        \n' +
                           '((?:\\s+to)?\\s+(?<destino> ([A-Z]+))  # TO          \n' +
                           ')?\\s*$', 'xi');
