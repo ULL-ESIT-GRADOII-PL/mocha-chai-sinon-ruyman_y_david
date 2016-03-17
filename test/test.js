@@ -33,7 +33,7 @@ describe("Medida", function() {
         expect(Medida.convertir ("100 F K")).to.be.an.instanceof(Kelvin);
     });
     it("Debería devolver un objeto Medida con el valor de cambio (exponente)", function() {
-        expect(Medida.convertir ("100^2 F K")).to.be.an.instanceof(Kelvin);
+        expect(Medida.convertir ("100e2 F K")).to.be.an.instanceof(Kelvin);
     });
     it("Debería devolver un objeto Medida con el valor de cambio", function() {
         expect(Medida.convertir ("100 F K")).to.be.an.instanceof(Kelvin);
