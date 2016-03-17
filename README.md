@@ -2,6 +2,8 @@
 ## ETSII ULL Grado de Informatica
 ## Asignatura: [Procesadores de Lenguajes](https://campusvirtual.ull.es/1516/course/view.php?id=178)
 
+### Descripcion de la práctica [aquí.]https://casianorodriguezleon.gitbooks.io/pl1516/content/mochachaisinon.html
+
 ### Información:
   Para realizar las pruebas con BlanketJS desde un ordenador de manera local es necesario:
   - Instalar: ```npm install serve -g``` o ```npm install serve```
@@ -9,7 +11,7 @@
 
 ### Despliegue en github.io
 
-* [Página de los Test](http://ULL-ESIT-GRADOII-PL.github.io/mocha-chai-sinon-ruyman_y_david/test.html)
+* [Página de los Test](http://ULL-ESIT-GRADOII-PL.github.io/mocha-chai-sinon-ruyman_y_david/test/index.html)
 * [Página de la práctica](http://ULL-ESIT-GRADOII-PL.github.io/mocha-chai-sinon-ruyman_y_david/)
 
 ### Desarrolladores
